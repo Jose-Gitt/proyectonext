@@ -4,6 +4,9 @@ import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import { lusitana } from '@/app/ui/fonts';
 import { fetchRevenue, fetchLatestInvoices, fetchCardData } from '@/app/lib/data';
 
+export const dynamic = 'force-dynamic';
+
+
 export default async function Page() {
   // Obtener todos los datos necesarios
   const revenue = await fetchRevenue();
